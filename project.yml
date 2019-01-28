@@ -1,0 +1,7 @@
+- name: Deploy Jenkins CI
+ hosts: jenkins_server
+ remote_user: the_user
+ become: yes
+
+ roles:
+   - geerlingguy.jenkins
